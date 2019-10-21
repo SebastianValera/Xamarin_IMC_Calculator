@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BMI_Calculator"
+             x:Class="BMI_Calculator.MainPage">
+
+    <StackLayout Margin="10,10,10,10">
+        <!-- Place new controls here -->
+        <Label Text="Calculo de IMC" 
+           HorizontalOptions="Center"
+           VerticalOptions="Start"
+               FontSize="30"/>
+        <Label Text="Basado en valores de IMSS" 
+           HorizontalOptions="Center"
+               FontSize="15"/>
+        <Label Text="Sexo:" 
+               FontSize="15"/>
+        <Picker x:Name="comboSexo" Title="Sexo" />
+        <Label Text="Edad:" 
+               FontSize="15"/>
+        <Picker x:Name="comboEdad" Title="Edad" />
+        <Label Text="Peso(kg):" 
+               FontSize="15"/>
+        <Editor x:Name="edtPeso" Placeholder="Peso"/>
+        <Label Text="Altura(m):" 
+               FontSize="15"/>
+        <Editor x:Name="edtAltura" Placeholder="Altura"/>
+        <Label Text="Tu IMC:" 
+               FontSize="15"/>
+        <Label x:Name="stcIMC" />
+        <Label Text="Categoría:" 
+               FontSize="15"/>
+        <Label x:Name="stcCategoria" />
+        <Button x:Name="btnIMC" Text="¡Calcular mi IMC!" Clicked="BtnIMC_Clicked"/>
+    </StackLayout>
+</ContentPage>
